@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>my test</title>
+    <link rel="icon" type="image/GIF" href="res/favicon.ico"/>
+    <meta name="viewport" content="width=480, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="yes"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+</head>
+<body style="padding:0; margin: 0;">
+    <script>
+        function LOG(context){
+            var log = document.createElement("div");
+            var content = document.createTextNode(context);
+            log.appendChild(content);
+            document.body.appendChild(log);    
+        }
+
+        LOG("Test Started");
+
+        var abc = {};
+        window._p;
+        _p = window;
+        LOG(typeof(_p));
+        delete window._p;
+        LOG(typeof(_p));
+
+        LOG("Test Ended");
+    </script>
+
+    <div style="font-size:20px;text-align:center;margin:0 auto;color:#fff">
+        <div style="height:400px;background:#A5423A;width:200px;left:0;top:0;">
+            <div style="height:200px;border:1px solid #BD503A;">
+                <h2>陈启杰大帅哥</h2>
+                <span class="text">发了一个红包</span>
+            </div>
+            <div onclick="alert('恭喜你，领了100000￥');" style="width:100%;height:100px;background-color:#FFA73A;cursor: pointer;">
+                <span style="margin-top:35px;display:inline-block;font-weight:bolder;">点击拆红包</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
